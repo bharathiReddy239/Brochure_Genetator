@@ -1,0 +1,25 @@
+[project]
+name = "ai-brochure-generator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "bharathiReddy239", email = "veerabharathi.g@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "gradio>=6.31.0",
+    "openai>=3.46.0",
+    "pytest>=9.2.0",
+    "python-dotenv>=1.2.4",
+    "reportlab>=5.1.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+ai-brochure-generator = "ai_brochure_generator:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
